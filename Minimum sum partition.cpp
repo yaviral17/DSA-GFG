@@ -19,15 +19,21 @@ public:
         {
             if (!sum1)
             {
+                // cout<<"sum1    "<<sum1<<" + "<<arr[i] <<"  = "<<sum1+arr[i]<<endl;
                 sum1 += arr[i];
                 continue;
             }
-            if((sum2+arr[i])<=sum1){
+            // cout<<absoluteDiff(sum1+arr[i],sum2)<<"---"<<absoluteDiff(sum2+arr[i],sum1)<<endl;
+            if(absoluteDiff(sum1+arr[i],sum2)>=absoluteDiff(sum1,sum2+arr[i])){
+                // cout<<"sum2    "<<sum2<<" + "<<arr[i] <<"  = "<<sum2+arr[i]<<endl;
                 sum2+=arr[i];
             }else{
+                // cout<<"sum1    "<<sum1<<" + "<<arr[i] <<"  = "<<sum1+arr[i]<<endl;
                 sum1+=arr[i];
             }
         }
+
+        // cout<< "sum1   = "<<sum1<<endl<<"sum2   = "<<sum2<<endl;
         return absoluteDiff(sum1,sum2);
     }
 };
