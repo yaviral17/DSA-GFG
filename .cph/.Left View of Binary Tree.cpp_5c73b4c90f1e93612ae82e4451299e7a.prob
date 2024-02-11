@@ -1,0 +1,1 @@
+{"name":"Local: Left View of Binary Tree","url":"d:\\code\\DSA\\Left View of Binary Tree.cpp","tests":[{"id":1707596981031,"input":"1\n1 3 2","output":"1 3"},{"id":1707597376891,"input":"1\n3 4 N 2 7 N 2 1 N 9 1","output":"3 4 2 2 9"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\code\\DSA\\Left View of Binary Tree.cpp","group":"local","local":true}

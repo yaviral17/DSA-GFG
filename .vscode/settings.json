@@ -3,7 +3,8 @@
         "*.embeddedhtml": "html",
         ".env*": "dotenv",
         "iostream": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "numeric": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }
