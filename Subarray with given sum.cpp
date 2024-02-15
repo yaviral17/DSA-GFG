@@ -13,20 +13,16 @@ public:
 
         for (int i = 0; i < arr.size(); i++)
         {
-
+            int summ = arr[i];
+            if(summ == s){
+                return {i+1 ,i+1};
+            }
             for (int j = i + 1; j < arr.size(); j++)
             {
-                long long Sum = 0;
-                
-                Sum = accumulate(arr.begin() + i, arr.begin() + j,Sum);
-                // cout<<Sum<<"-- sum "<<endl;
-                if(Sum == s){
-                    return {i+1,j};
+                if(summ+arr[j] == s){
+                    return {i+1,j+1};
                 }
-                if(Sum > s){
-                    break;
-                }
-                
+                summ+=arr[j];
             }
         }
         return {-1};
