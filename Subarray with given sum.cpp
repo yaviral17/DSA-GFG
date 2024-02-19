@@ -10,20 +10,27 @@ public:
     vector<int> subarraySum(vector<int> arr, int n, long long s)
     {
         // Your code here
+        // start and end
+        int st=0,e=0;
+        int sum =arr[0];
+        // cout<<(st<=e)<<endl;
+        while(st<n){
+            // cout<<"s : "<<st<<"\t"<<"e : "<<e<<endl;
+            if(sum<s){
+                
+                sum+=arr[++e];
+                continue;
+            
+            }
+            if(sum==s){
+                return {st,e};
+            }
+            if(sum>s){
+                st++;
+                e = st;
+                sum =0+arr[s];
+            }
 
-        for (int i = 0; i < arr.size(); i++)
-        {
-            int summ = arr[i];
-            if(summ == s){
-                return {i+1 ,i+1};
-            }
-            for (int j = i + 1; j < arr.size(); j++)
-            {
-                if(summ+arr[j] == s){
-                    return {i+1,j+1};
-                }
-                summ+=arr[j];
-            }
         }
         return {-1};
     }

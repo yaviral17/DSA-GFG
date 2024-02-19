@@ -19,9 +19,9 @@ public:
 
         for (int i = s+1; i < n; i++)
         {
-            cout<<s<<"--"<<i<<endl;
+            // cout<<s<<"--"<<i<<endl;
             int summ = accumulate(arr+s, arr + i, 0);
-            cout<<summ<<endl;
+            // cout<<summ<<endl;
             ans.push_back(summ);
             summ=0;
             if((s!=n-1) && (i == n-1)){
