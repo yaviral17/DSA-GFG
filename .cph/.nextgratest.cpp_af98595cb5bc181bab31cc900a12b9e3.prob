@@ -1,0 +1,1 @@
+{"name":"Local: nextgratest","url":"/media/aviral/New Volume/code/DSA/nextgratest.cpp","tests":[{"id":1708180248486,"input":"1\n4\n1 3 2 4","output":"3 4 4 -1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/media/aviral/New Volume/code/DSA/nextgratest.cpp","group":"local","local":true}

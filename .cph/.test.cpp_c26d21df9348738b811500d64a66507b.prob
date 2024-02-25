@@ -1,0 +1,1 @@
+{"name":"Local: test","url":"/media/aviral/New Volume/code/DSA/test.cpp","tests":[{"id":1708245609932,"input":"4\n1 2 3 4","output":"4"},{"id":1708245741221,"input":"5\n2 3 5 3 4","output":"5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/media/aviral/New Volume/code/DSA/test.cpp","group":"local","local":true}
